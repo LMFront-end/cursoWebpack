@@ -1,0 +1,31 @@
+{
+    "name": "webpack",
+    "version": "1.0.0",
+    "description": "* Es un empaquetador de archivos para aplicaciones JavaScript modernas, totalmente configurable y a diferencia de los Task Runners (como Grunt y Gulp) donde los procesos se gestionan de forma separada, en Webpack, se conoce el origen y todo se compila en un único archivo.",
+    "main": "src/index.js",
+    "scripts": {
+        "dev-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+        "build-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production",
+        "start": "webpack serve --mode development --open --port 3000"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "Lina María Guerrero <perfilgitlinamaria@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/preset-env": "^7.16.7",
+        "babel-loader": "^8.2.3",
+        "css-loader": "^6.5.1",
+        "file-loader": "^6.2.0",
+        "html-loader": "^3.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.4.6",
+        "webpack": "^5.65.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^4.7.2"
+    }
+}

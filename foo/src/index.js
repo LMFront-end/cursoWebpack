@@ -1,0 +1,1 @@
+console.log("Hola Mundito sin configuración con Webpack 😫");
